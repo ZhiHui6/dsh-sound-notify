@@ -2,6 +2,24 @@
 
 A DeepSeek Harness plugin that plays a sound when a task finishes, fails, or reports an error.
 
+## Installation
+
+This is a Harness bundle, so it installs into your Harness profile rather than into a normal project. It needs Harness 0.2.0 or newer.
+
+Ask the agent in DeepSeek Harness to install it from this repository:
+
+> Install the bundle at https://github.com/ZhiHui6/dsh-sound-notify
+
+Or clone it and point the installer at the directory:
+
+```bash
+git clone https://github.com/ZhiHui6/dsh-sound-notify.git
+```
+
+then have the agent run `plugin_manager` with `action: install_bundle` and that directory as the target.
+
+The install writes a link into your profile, so the plugin survives a restart and applies to every session in that profile.
+
 ## Features
 
 - Three independent events: **task completed**, **task failed**, **error prompt**.
@@ -35,6 +53,24 @@ Sounds are debounced, so a burst of sessions finishing at once produces a single
 # 声音提示
 
 当任务完成、任务失败或出现错误提示时播放提示音的 DeepSeek Harness 插件。
+
+## 安装
+
+这是一个 Harness bundle，安装进 Harness 配置档案，而不是装进某个普通项目。需要 Harness 0.2.0 或更高版本。
+
+直接让 DeepSeek Harness 里的 Agent 从本仓库安装：
+
+> 安装 https://github.com/ZhiHui6/dsh-sound-notify 这个 bundle
+
+或者先克隆到本地，再让安装器指向该目录：
+
+```bash
+git clone https://github.com/ZhiHui6/dsh-sound-notify.git
+```
+
+然后让 Agent 调用 `plugin_manager`，`action: install_bundle`，`target` 填该目录。
+
+安装会在配置档案里写入链接，因此重启后依然生效，并对该档案下的所有会话可用。
 
 ## 功能
 

@@ -1,7 +1,6 @@
 {
-  "name": "@local/dsh-sound-notify",
+  "name": "@zhihui6/dsh-sound-notify",
   "version": "1.0.0",
-  "private": true,
   "description": "Play a sound when a DeepSeek Harness task completes, fails, or reports an error. Ships nine built-in tones, supports custom audio files, and previews every sound.",
   "type": "module",
   "main": "index.js",
@@ -18,8 +17,35 @@
     "locale/en.json",
     "locale/zh.json",
     "icon.svg",
-    "README.md"
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
   ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "cordis",
+    "deepseek-harness",
+    "notification",
+    "sound",
+    "audio",
+    "alert",
+    "chime"
+  ],
+  "author": "Binity <benlo@foxmail.com> (https://github.com/ZhiHui6)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhiHui6/dsh-sound-notify.git"
+  },
+  "homepage": "https://github.com/ZhiHui6/dsh-sound-notify#readme",
+  "bugs": {
+    "url": "https://github.com/ZhiHui6/dsh-sound-notify/issues"
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
@@ -31,12 +57,17 @@
         "@deepseek-ai/dsh-client-locale",
         "@deepseek-ai/dsh-client-ui-conversation"
       ]
+    },
+    "compatibility": {
+      "dsh": ">=0.2.0",
+      "profiles": [
+        "web"
+      ]
     }
   },
   "peerDependencies": {
     "@deepseek-ai/cordis": "*",
     "@deepseek-ai/dsh-client-ui-slots": "*",
     "react": "^18.2.0"
-  },
-  "license": "MIT"
+  }
 }

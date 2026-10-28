@@ -1,5 +1,5 @@
 window.__ModuleLoader__.load({
-	id: '@local/dsh-sound-notify',
+	id: '@zhihui6/dsh-sound-notify',
 	factory(require) {
 		const React = require('react');
 		const h = React.createElement;
