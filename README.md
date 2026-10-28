@@ -1,5 +1,7 @@
 # Sound notifications
 
+[![CI](https://github.com/ZhiHui6/dsh-sound-notify/actions/workflows/ci.yml/badge.svg)](https://github.com/ZhiHui6/dsh-sound-notify/actions/workflows/ci.yml)
+
 A DeepSeek Harness plugin that plays a sound when a task finishes, fails, or reports an error.
 
 ## Installation
