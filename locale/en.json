@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Sound notifications",
+    "description": "Play a sound when a task completes, fails, or reports an error. Nine built-in tones, custom audio files, and instant preview."
+  }
+}

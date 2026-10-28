@@ -1,0 +1,3 @@
+- insert:
+    - id: sound-notify
+      name: '@local/dsh-sound-notify'
