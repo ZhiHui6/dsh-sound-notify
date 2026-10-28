@@ -1,7 +1,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const SOURCE = fs.readFileSync(path.join('E:', 'DSH-WorkZone', 'dsh-plugin-sound-notify', 'client.js'), 'utf8');
+const HERE = path.dirname(fileURLToPath(import.meta.url));
+const SOURCE = fs.readFileSync(path.join(HERE, 'client.js'), 'utf8');
 const KEY = 'dsh.sound-notify.settings.v1';
 
 const oscLog = [];
